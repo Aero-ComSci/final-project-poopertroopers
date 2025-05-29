@@ -13,10 +13,7 @@ This questionnaire can be used for:
 - Developers modifying it for different themes.
 
 ## 🖼️ Screenshots & Code Examples
-Below are some snapshots of the form UI, stored JSON data, and response tracking.
-
-*Example Form Screenshot:*  
-![Survey Form](screenshots/survey_form.png)
+Below are some samples of stored JSON data, and response tracking.
 
 *Example JSON Data Structure:*
 ```json
