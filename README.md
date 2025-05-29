@@ -1,4 +1,5 @@
-
+## Overview
+- Hey guys! It's summer! And we want to know what your plan is this summer and the places you're visiting! Our questionnaire will aks you questions about your vacations places and then comapre your answer with differnt answers as well!
 ## 🎯 What Does the Code Do?
 - Collects user responses to summer-related questions.
 - Stores answers in JSON format for data analysis.
