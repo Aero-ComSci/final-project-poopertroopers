@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: auto;
+        }
+        button {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>🌍 Vacation Destination Stats ✈️</h2>
+        <p id="result">Checking...</p>
+        <button onclick="clearData()">Clear Data</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let storedData = JSON.parse(localStorage.getItem("vacationData")) || [];
+
+            let currentUser = JSON.parse(localStorage.getItem("userResponses")) || {};
+            let userDestination = currentUser.vacation;
+
+            let count = storedData.filter(dest => dest === userDestination).length;
+
+            document.getElementById("result").innerText = 
+                `You are going to ${userDestination}. ${count} others are also going there!`;
+        });
+
+        function clearData() {
+            localStorage.removeItem("vacationData");
+            localStorage.removeItem("userResponses");
+            alert("Data cleared!");
+            location.reload();
+        }
+    </script>
+
+</body>
+</html>

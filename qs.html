@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Survey</title>
+    <script src="answer.js"></script>
+
+</head>
+<body>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container for the Form */
+        .container {
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: auto;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Input Fields */
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Submit Button */
+        button {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #e68900;
+        }
+    </style>
+
+    <h2>Summer Fun Questionnaire</h2>
+    <form>
+        <label for="name">What is your name?</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="vacation">Where are you going for your vacation?</label><br>
+        <input type="text" id="vacation" name="vacation" required><br><br>
+
+        <label for="poop">How many times do you think you poop per day?</label><br>
+        <input type="number" id="poop" name="poop" min="0" required><br><br>
+
+        <button type="submit" onclick="redirectToResults()">Submit Answers</button>
+
+    </form>
+</body>
+</html>
