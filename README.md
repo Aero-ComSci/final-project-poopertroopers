@@ -4,7 +4,7 @@ A brief description of your project—what it does, why it exists, and how it en
 
 #**File**
 
-README.md – Project overview and instructions
+-README.md – Project overview and instructions
 
 questions.md – List of summer-related questions
 
