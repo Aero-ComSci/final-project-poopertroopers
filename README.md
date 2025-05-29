@@ -2,7 +2,7 @@
 ## 🎯 What Does the Code Do?
 - Collects user responses to summer-related questions.
 - Stores answers in JSON format for data analysis.
-- Displays results dynamically based on stored data.
+- Displays results dynamically based on stored data (percentage of people going to same vacation place).
 - Provides basic automation using **JavaScript** and **localStorage**.
 
 ---
